@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1. Kirish va Asoslar</title>
+    <link rel="stylesheet" href="./all.css" />
+  </head>
+  <body>
+    <h1>1.React nima.</h1>
+    <p>
+      React — bu foydalanuvchi interfeyslarini yaratish uchun Facebook tomonidan
+      ishlab chiqilgan JavaScript kutubxonasi. U asosan bir sahifali ilovalar
+      (SPA) yaratishda ishlatiladi. React yordamida dinamik va interaktiv
+      foydalanuvchi interfeyslarini yaratish mumkin. React kompozitsion
+      yondashuvga ega, ya'ni UI ni kichik, qayta ishlatiladigan komponentlarga
+      ajratib yaratishga imkon beradi.
+    </p>
+    <br />
+    <h1>2.React’ning afzalliklari.</h1>
+    <ul>
+      <li>
+        <b>Kompontentlarga asoslangan yondashuv:</b>UI ni kichik, oson
+        boshqariladigan va qayta ishlatiladigan komponentlarga ajratish imkonini
+        beradi.
+      </li>
+      <li>
+        <b>Virtual DOM:</b>Virtual DOM yordamida DOM manipulyatsiyasining
+        samaradorligi oshadi, chunki faqat kerakli qismlar yangilanadi.
+      </li>
+      <li>
+        <b>Deklarativ yondashuv:</b>
+        UI holatiga qarab React nima qilish kerakligini belgilashni
+        osonlashtiradi.
+      </li>
+      <li>
+        <b>React Native:</b>React bilan mobil ilovalar yaratish imkonini beradi.
+      </li>
+      <li>
+        <b>Ko‘plab kutubxonalar va ekotizimlar:</b>React bilan ishlashda turli
+        kutubxonalar (Redux, React Router, va boshqalar) mavjud.
+      </li>
+    </ul>
+    <br />
+    <h1>3.JSX nima va qanday ishlaydi?</h1>
+    <p>
+      JSX (JavaScript XML) — bu React-da HTML va JavaScript kodlarini
+      birlashtirgan maxsus sintaksisdir. JSX yordamida HTML kodlarini JavaScript
+      ichida yozish mumkin. JSX aslida JavaScript kodiga transpilyatsiya
+      qilinadi, ya'ni bu sintaksisni brauzer tushunmaydi, lekin React bu kodni
+      <mark>React.createElement()</mark> funksiyasiga o‘zgartiradi.
+    </p>
+    <h1>4. Virtual DOM tushunchasi</h1>
+    <p>
+      Virtual DOM — bu React tomonidan yaratilgan xotirada joylashgan DOM
+      nusxasidir. Foydalanuvchi interfeysida biror narsa o‘zgarganda, React
+      avval Virtual DOMni yangilaydi, so‘ngra yangi Virtual DOM bilan asl DOMni
+      taqqoslaydi va faqat o‘zgarishlarni asl DOMga kiritadi. Bu jarayon
+      samaradorlikni oshiradi, chunki to‘liq DOMni yangilashning o‘rniga faqat
+      zarur qismlar yangilanadi.
+    </p>
+    <h1>5. React’ni o‘rnatish (CDN va Create React App)</h1>
+    <ul>
+      <li>
+        CDN orqali o‘rnatish: Agar React’ni faqat kichik loyiha uchun
+        ishlatmoqchi bo‘lsangiz, CDN orqali o‘rnatish mumkin. Misol uchun, HTML
+        faylga quyidagi script teglari orqali React va ReactDOM kutubxonalarini
+        ulashing:
+      </li>
+      <li>
+        Create React App orqali o‘rnatish: Create React App — bu React
+        ilovalarini yaratish uchun qulay boshqaruvchi vositadir. Bu vosita
+        yordamida React ilovalarini tezda yaratish mumkin. O‘rnatish uchun
+        terminalda quyidagilarni bajarish kerak:
+      </li>
+      <p>npx create-react-app my-app</p>
+      <p>cd my-app</p>
+      <p>npm start</p>
+    </ul>
+    <h1>6. React komponentlari (Function va Class komponentlar)</h1>
+    <ul>
+      <li>
+        Function komponentlari: Bu komponentlar faqat funksiyalar yordamida
+        yaratiladi. Ular React’ning zamonaviy usuliga asoslangan.
+      </li>
+      <li>
+        Class komponentlari: Klassik usulda komponentlar class orqali yaratildi
+        va render() metodidan foydalanadi.
+      </li>
+      <li>
+        Bugungi kunda Function komponentlari ko‘proq ishlatiladi, chunki ular
+        ko‘proq optimallashtirilgan va osonroq ishlatiladi, ayniqsa React hooks
+        bilan.
+      </li>
+    </ul>
+
+    <h1>7. React’ning asosiy sintaksisi</h1>
+    <p>React’ning asosiy sintaksisi quyidagi elementlardan tashkil topadi:</p>
+    <ul>
+      <li>
+        JSX: Yuqorida aytib o‘tganimizdek, JSX HTML va JavaScriptning birlashgan
+        sintaksisi.
+      </li>
+      <li>Komponentlar: Function va Class komponentlari.</li>
+      <li>
+        Props: Komponentlarga ma'lumot uzatish uchun ishlatiladi. Masalan: jsx
+      </li>
+      <li>
+        State: Komponentlarning ichki holatini saqlaydi va yangilaydi. useState
+        hooki yordamida ishlatiladi.
+      </li>
+    </ul>
+  </body>
+</html>
